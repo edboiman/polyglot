@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#eef1f0" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#10151b" media="(prefers-color-scheme: dark)" />
+    <meta name="description" content="Learn Spanish, German or French with spaced repetition, active recall and real conversations. Works offline, no account needed." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Polyglot" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+    <title>Polyglot</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Polyglot needs JavaScript to run.</noscript>
+    <script>
+      // If the app has not started after a few seconds, explain the most common cause instead of
+      // leaving a blank page: the site is serving the unbuilt source code.
+      setTimeout(function () {
+        var root = document.getElementById('root');
+        if (root && !root.hasChildNodes()) {
+          root.innerHTML =
+            '<div style="font-family:system-ui,sans-serif;max-width:520px;margin:15vh auto;padding:0 20px;line-height:1.5">' +
+            '<h1 style="font-size:1.4rem">Polyglot didn\'t start</h1>' +
+            '<p>If you are the site owner: GitHub Pages is probably publishing the source code instead of the built app. ' +
+            'In the repository go to <b>Settings › Pages</b> and set <b>Source</b> to <b>GitHub Actions</b>, then check the <b>Actions</b> tab for a green run.</p>' +
+            '<p>Otherwise, try reloading the page.</p></div>';
+        }
+      }, 6000);
+    </script>
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>
