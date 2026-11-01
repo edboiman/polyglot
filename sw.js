@@ -1,5 +1,5 @@
-const PRECACHE = ["./","assets/main-NQC63UPH.css","assets/main-PFUTS5L4.js","icons/icon-192.png","icons/icon-512.png","icons/icon-maskable-512.png","icons/icon.svg","index.html","manifest.webmanifest"];
-const VERSION = '436c8378777f';
+const PRECACHE = ["./","assets/main-JNS4BHZP.js","assets/main-NQC63UPH.css","icons/icon-192.png","icons/icon-512.png","icons/icon-maskable-512.png","icons/icon.svg","index.html","manifest.webmanifest"];
+const VERSION = 'b7d034a307ea';
 /* Polyglot service worker — generated at build time by scripts/precache.mjs.
    The PRECACHE list and VERSION are injected for each build, so the app shell
    and every built asset are cached together on the first visit, and replaced
